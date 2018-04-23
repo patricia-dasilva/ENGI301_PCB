@@ -3,7 +3,7 @@
 <eagle version="9.0.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -44,17 +44,17 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
@@ -847,15 +847,36 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <element name="U$3" library="Project#2" package="4HOLE-THRU" value="TSA12110_BUTTON" x="34.29" y="27.686"/>
 <element name="U$4" library="Project#2" package="4HOLE-THRU" value="TSA12110_BUTTON" x="9.906" y="27.686"/>
 <element name="PWR" library="Project#2" package="4HOLE-THRU" value="TSA12110_BUTTON" x="85.09" y="59.436"/>
-<element name="U$6" library="Project#2" package="2HOLE-THRU" value="CEM-1203_BUZZER" x="58.928" y="59.182" rot="R270"/>
+<element name="U$6" library="Project#2" package="2HOLE-THRU" value="CEM-1203_BUZZER" x="58.928" y="59.182" smashed="yes" rot="R270">
+<attribute name="NAME" x="52.832" y="65.278" size="1.27" layer="25"/>
+<attribute name="VALUE" x="67.31" y="52.832" size="1.27" layer="27" rot="R180.5"/>
+</element>
 <element name="U$7" library="Project#2" package="4HOLE-THRU" value="TSA12110_BUTTON" x="34.29" y="8.636"/>
-<element name="U$8" library="Project#2" package="SMD_0.8X0.8MM" value="LTST_LED" x="137.16" y="9.398"/>
-<element name="U$9" library="Project#2" package="SMD_0.8X0.8MM" value="LTST_LED" x="137.16" y="6.35"/>
-<element name="U$10" library="Project#2" package="SMD_0.8X0.8MM" value="LTST_LED" x="137.16" y="2.54"/>
-<element name="C3" library="IMU" package="C0402" value="10nF" x="65.786" y="8.636"/>
-<element name="C1" library="IMU" package="C0402" value="0.1uF" x="70.358" y="8.636" rot="R180"/>
+<element name="U$8" library="Project#2" package="SMD_0.8X0.8MM" value="LTST_LED" x="137.16" y="9.398" smashed="yes">
+<attribute name="NAME" x="137.668" y="8.128" size="0.762" layer="25"/>
+<attribute name="VALUE" x="135.128" y="10.287" size="0.762" layer="27"/>
+</element>
+<element name="U$9" library="Project#2" package="SMD_0.8X0.8MM" value="LTST_LED" x="137.16" y="6.35" smashed="yes">
+<attribute name="NAME" x="137.668" y="4.826" size="0.762" layer="25"/>
+<attribute name="VALUE" x="135.128" y="7.239" size="0.762" layer="27"/>
+</element>
+<element name="U$10" library="Project#2" package="SMD_0.8X0.8MM" value="LTST_LED" x="137.16" y="2.54" smashed="yes">
+<attribute name="NAME" x="137.668" y="1.27" size="0.762" layer="25"/>
+<attribute name="VALUE" x="135.128" y="3.429" size="0.762" layer="27"/>
+</element>
+<element name="C3" library="IMU" package="C0402" value="10nF" x="65.786" y="8.636" smashed="yes">
+<attribute name="NAME" x="64.897" y="7.366" size="0.8128" layer="25"/>
+<attribute name="VALUE" x="66.167" y="9.144" size="0.254" layer="27"/>
+</element>
+<element name="C1" library="IMU" package="C0402" value="0.1uF" x="70.358" y="8.636" smashed="yes" rot="R180">
+<attribute name="NAME" x="70.993" y="8.128" size="0.8128" layer="25" rot="R180"/>
+<attribute name="VALUE" x="71.501" y="9.398" size="0.254" layer="27" rot="R180"/>
+</element>
 <element name="C2" library="IMU" package="C0402" value="0.1uF" x="75.438" y="11.938" rot="R270"/>
-<element name="R1" library="Project#2" package="R0603" value="1k" x="133.35" y="9.398"/>
+<element name="R1" library="Project#2" package="R0603" value="1k" x="133.35" y="9.398" smashed="yes">
+<attribute name="NAME" x="132.4356" y="10.0584" size="0.254" layer="25"/>
+<attribute name="VALUE" x="132.2324" y="8.4582" size="0.254" layer="27"/>
+</element>
 <element name="R2" library="Project#2" package="R0603" value="1k" x="130.81" y="6.35"/>
 <element name="R3" library="Project#2" package="R0603" value="1k" x="128.016" y="2.54"/>
 <element name="U1" library="Project#2" package="FE06W" value="MOD-LED8X8RGB-CONN" x="101.981" y="74.168"/>

@@ -1089,6 +1089,11 @@ ARRAY</text>
 <text x="22.86" y="68.58" size="2.54" layer="94">Pocket</text>
 <text x="25.4" y="66.04" size="2.54" layer="94">Beagle</text>
 </symbol>
+<symbol name="VDD_5V">
+<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
+<pin name="SYS_VDD1_3P3V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="4.064" size="1.778" layer="96" align="center">&gt;VALUE</text>
+</symbol>
 <symbol name="VDD_3P3V">
 <circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
 <pin name="SYS_VDD1_3P3V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
@@ -1541,9 +1546,9 @@ DIN A3, landscape with location and doc. field</description>
 </devices>
 </deviceset>
 <deviceset name="VDD_5V" prefix="SUPPLY">
-<description>3V Power</description>
+<description>5V Power</description>
 <gates>
-<gate name="G$1" symbol="VDD_3P3V" x="0" y="2.54"/>
+<gate name="G$1" symbol="VDD_5V" x="0" y="2.54"/>
 </gates>
 <devices>
 <device name="">
@@ -1784,8 +1789,6 @@ Sizes: 0402, 0603 &amp; 0805</description>
 <part name="U3" library="Project#2" deviceset="POCKETBEAGLE" device=""/>
 <part name="SUPPLY5" library="Project#2" deviceset="VDD_3P3V" device=""/>
 <part name="SUPPLY6" library="Project#2" deviceset="VDD_3P3V" device=""/>
-<part name="SUPPLY3" library="Project#2" deviceset="VDD_5V" device=""/>
-<part name="SUPPLY4" library="Project#2" deviceset="VDD_5V" device=""/>
 <part name="GND5" library="IMU" deviceset="GND" device=""/>
 <part name="GND6" library="Project#2" deviceset="GND" device=""/>
 <part name="GND8" library="Project#2" deviceset="GND" device=""/>
@@ -1805,14 +1808,16 @@ Sizes: 0402, 0603 &amp; 0805</description>
 <part name="GND12" library="Project#2" deviceset="GND" device=""/>
 <part name="GND13" library="Project#2" deviceset="GND" device=""/>
 <part name="GND14" library="Project#2" deviceset="GND" device=""/>
-<part name="SUPPLY12" library="Project#2" deviceset="VDD_5V" device=""/>
-<part name="SUPPLY13" library="Project#2" deviceset="VDD_5V" device=""/>
 <part name="GND15" library="Project#2" deviceset="GND" device=""/>
 <part name="GND16" library="Project#2" deviceset="GND" device=""/>
 <part name="GND17" library="Project#2" deviceset="GND" device=""/>
 <part name="R11" library="Project#2" deviceset="R_" device="R0603" value="2.2k"/>
 <part name="R12" library="Project#2" deviceset="R_" device="R0603" value="2.2k"/>
 <part name="U4" library="Project#2" deviceset="IMU_MPU9250" device=""/>
+<part name="SUPPLY3" library="Project#2" deviceset="VDD_5V" device=""/>
+<part name="SUPPLY4" library="Project#2" deviceset="VDD_5V" device=""/>
+<part name="SUPPLY14" library="Project#2" deviceset="VDD_5V" device=""/>
+<part name="SUPPLY15" library="Project#2" deviceset="VDD_5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1855,8 +1860,6 @@ Button</text>
 <instance part="U3" gate="G$1" x="35.56" y="104.14"/>
 <instance part="SUPPLY5" gate="G$1" x="15.24" y="241.3"/>
 <instance part="SUPPLY6" gate="G$1" x="96.52" y="248.92"/>
-<instance part="SUPPLY3" gate="G$1" x="27.94" y="241.3"/>
-<instance part="SUPPLY4" gate="G$1" x="86.36" y="241.3"/>
 <instance part="GND5" gate="1" x="231.14" y="81.28"/>
 <instance part="GND6" gate="1" x="10.16" y="154.94"/>
 <instance part="GND8" gate="1" x="91.44" y="180.34"/>
@@ -1876,14 +1879,16 @@ Button</text>
 <instance part="GND12" gate="1" x="93.98" y="48.26"/>
 <instance part="GND13" gate="1" x="93.98" y="30.48"/>
 <instance part="GND14" gate="1" x="93.98" y="15.24"/>
-<instance part="SUPPLY12" gate="G$1" x="281.94" y="236.22"/>
-<instance part="SUPPLY13" gate="G$1" x="279.4" y="200.66"/>
 <instance part="GND15" gate="1" x="287.02" y="175.26"/>
 <instance part="GND16" gate="1" x="144.78" y="99.06"/>
 <instance part="GND17" gate="1" x="83.82" y="175.26"/>
 <instance part="R11" gate="G$1" x="104.14" y="236.22" rot="R90"/>
 <instance part="R12" gate="G$1" x="111.76" y="233.68" rot="R90"/>
 <instance part="U4" gate="G$1" x="271.78" y="78.74"/>
+<instance part="SUPPLY3" gate="G$1" x="27.94" y="241.3"/>
+<instance part="SUPPLY4" gate="G$1" x="86.36" y="241.3"/>
+<instance part="SUPPLY14" gate="G$1" x="264.16" y="236.22"/>
+<instance part="SUPPLY15" gate="G$1" x="264.16" y="200.66"/>
 </instances>
 <busses>
 </busses>
@@ -2050,16 +2055,6 @@ Button</text>
 <pinref part="U4" gate="G$1" pin="VDDIO"/>
 </segment>
 <segment>
-<pinref part="SUPPLY3" gate="G$1" pin="SYS_VDD1_3P3V"/>
-<pinref part="U3" gate="G$1" pin="VOUT@1"/>
-<wire x1="27.94" y1="238.76" x2="30.48" y2="238.76" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U3" gate="G$1" pin="VOUT@2"/>
-<pinref part="SUPPLY4" gate="G$1" pin="SYS_VDD1_3P3V"/>
-<wire x1="81.28" y1="238.76" x2="86.36" y2="238.76" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="45.72" y1="88.9" x2="55.88" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="SUPPLY8" gate="G$1" pin="SYS_VDD1_3P3V"/>
@@ -2087,18 +2082,6 @@ Button</text>
 <pinref part="SUPPLY11" gate="G$1" pin="SYS_VDD1_3P3V"/>
 </segment>
 <segment>
-<pinref part="SUPPLY12" gate="G$1" pin="SYS_VDD1_3P3V"/>
-<wire x1="281.94" y1="233.68" x2="281.94" y2="231.14" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="5V"/>
-<wire x1="281.94" y1="231.14" x2="292.1" y2="231.14" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="SUPPLY13" gate="G$1" pin="SYS_VDD1_3P3V"/>
-<wire x1="279.4" y1="198.12" x2="279.4" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="5V"/>
-<wire x1="279.4" y1="195.58" x2="292.1" y2="195.58" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U3" gate="G$1" pin="3.3V@1"/>
 <wire x1="81.28" y1="236.22" x2="96.52" y2="236.22" width="0.1524" layer="91"/>
 <pinref part="SUPPLY6" gate="G$1" pin="SYS_VDD1_3P3V"/>
@@ -2117,6 +2100,11 @@ Button</text>
 <wire x1="15.24" y1="236.22" x2="30.48" y2="236.22" width="0.1524" layer="91"/>
 <pinref part="SUPPLY5" gate="G$1" pin="SYS_VDD1_3P3V"/>
 <wire x1="15.24" y1="238.76" x2="15.24" y2="236.22" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="VOUT@2"/>
+<pinref part="SUPPLY4" gate="G$1" pin="SYS_VDD1_3P3V"/>
+<wire x1="81.28" y1="238.76" x2="86.36" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -2370,6 +2358,26 @@ Button</text>
 <pinref part="U3" gate="G$1" pin="PRU0.7"/>
 <wire x1="81.28" y1="111.76" x2="86.36" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="111.76" x2="86.36" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="5V"/>
+<wire x1="281.94" y1="231.14" x2="292.1" y2="231.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<wire x1="279.4" y1="198.12" x2="279.4" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="5V"/>
+<wire x1="279.4" y1="195.58" x2="292.1" y2="195.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SYS_VDD1_5V" class="0">
+<segment>
+<pinref part="SUPPLY3" gate="G$1" pin="SYS_VDD1_3P3V"/>
+<pinref part="U3" gate="G$1" pin="VOUT@1"/>
+<wire x1="27.94" y1="238.76" x2="30.48" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

@@ -1090,7 +1090,7 @@ DIN A3, landscape with location and doc. field</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LTST_LED">
+<deviceset name="LTST_LED" prefix="D">
 <description>An LED ( 0.8x0.8MM SMD )</description>
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="0"/>

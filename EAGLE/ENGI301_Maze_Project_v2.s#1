@@ -2258,74 +2258,74 @@ Button</text>
 </net>
 <net name="LEDARR_CLK" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="SPI0.CLK"/>
-<wire x1="81.28" y1="215.9" x2="104.14" y2="215.9" width="0.1524" layer="91"/>
-<label x="83.82" y="215.9" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="DATA_SCK_IN"/>
 <wire x1="292.1" y1="228.6" x2="269.24" y2="228.6" width="0.1524" layer="91"/>
 <label x="269.24" y="228.6" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="SPI1.CLK"/>
+<wire x1="12.7" y1="215.9" x2="30.48" y2="215.9" width="0.1524" layer="91"/>
+<label x="12.7" y="215.9" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="LEDARR_MOSI" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="SPI0.MOSI"/>
-<wire x1="81.28" y1="213.36" x2="104.14" y2="213.36" width="0.1524" layer="91"/>
-<label x="83.82" y="213.36" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="DATA_LINE_IN"/>
 <wire x1="292.1" y1="223.52" x2="269.24" y2="223.52" width="0.1524" layer="91"/>
 <label x="269.24" y="223.52" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="SPI1.MOSI"/>
+<wire x1="12.7" y1="213.36" x2="30.48" y2="213.36" width="0.1524" layer="91"/>
+<label x="12.7" y="213.36" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="LEDARR_CS" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="SPI0.CS"/>
-<wire x1="81.28" y1="208.28" x2="104.14" y2="208.28" width="0.1524" layer="91"/>
-<label x="83.82" y="208.28" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="DATA_LATCH_IN/#MCLR"/>
 <wire x1="292.1" y1="226.06" x2="269.24" y2="226.06" width="0.1524" layer="91"/>
 <label x="269.24" y="226.06" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="SPI1.CS"/>
+<wire x1="12.7" y1="208.28" x2="30.48" y2="208.28" width="0.1524" layer="91"/>
+<label x="12.7" y="208.28" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="LEDARR2_CLK" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="SPI1.CLK"/>
-<wire x1="30.48" y1="215.9" x2="10.16" y2="215.9" width="0.1524" layer="91"/>
-<label x="10.16" y="215.9" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="DATA_SCK_IN"/>
 <wire x1="292.1" y1="193.04" x2="271.78" y2="193.04" width="0.1524" layer="91"/>
 <label x="271.78" y="193.04" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="SPI0.CLK"/>
+<wire x1="81.28" y1="215.9" x2="96.52" y2="215.9" width="0.1524" layer="91"/>
+<label x="81.28" y="215.9" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="LEDARR2_MOSI" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="SPI1.MOSI"/>
-<wire x1="30.48" y1="213.36" x2="10.16" y2="213.36" width="0.1524" layer="91"/>
-<label x="10.16" y="213.36" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="DATA_LINE_IN"/>
 <wire x1="292.1" y1="187.96" x2="271.78" y2="187.96" width="0.1524" layer="91"/>
 <label x="271.78" y="187.96" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="SPI0.MOSI"/>
+<wire x1="81.28" y1="213.36" x2="96.52" y2="213.36" width="0.1524" layer="91"/>
+<label x="81.28" y="213.36" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="LEDARR2_CS" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="SPI1.CS"/>
-<wire x1="30.48" y1="208.28" x2="10.16" y2="208.28" width="0.1524" layer="91"/>
-<label x="10.16" y="208.28" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="DATA_LATCH_IN/#MCLR"/>
 <wire x1="292.1" y1="190.5" x2="271.78" y2="190.5" width="0.1524" layer="91"/>
 <label x="271.78" y="190.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U3" gate="G$1" pin="SPI0.CS"/>
+<wire x1="81.28" y1="208.28" x2="96.52" y2="208.28" width="0.1524" layer="91"/>
+<label x="81.28" y="208.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">

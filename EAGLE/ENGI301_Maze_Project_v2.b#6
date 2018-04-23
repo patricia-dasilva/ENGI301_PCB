@@ -941,9 +941,7 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <vertex x="145.161" y="-0.381"/>
 <vertex x="145.161" y="76.581"/>
 </polygon>
-<contactref element="U3" pad="49"/>
-<wire x1="107.002" y1="40.868" x2="119.702" y2="40.868" width="0" layer="19" extent="1-1"/>
-<wire x1="107.002" y1="18.008" x2="107.002" y2="40.868" width="0" layer="19" extent="1-1"/>
+<wire x1="107.002" y1="18.008" x2="119.702" y2="40.868" width="0" layer="19" extent="1-1"/>
 <wire x1="75.438" y1="11.3792" x2="107.002" y2="18.008" width="0" layer="19" extent="1-1"/>
 <wire x1="72.112" y1="10.938" x2="75.438" y2="11.3792" width="0" layer="19" extent="1-1"/>
 <wire x1="70.012" y1="10.438" x2="72.112" y2="10.938" width="0" layer="19" extent="1-1"/>
@@ -1096,14 +1094,14 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <contactref element="U3" pad="29"/>
 <wire x1="127.2159" y1="2.54" x2="127.322" y2="15.468" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$14">
-<contactref element="U1" pad="1"/>
-</signal>
-<signal name="N$15">
-<contactref element="U2" pad="1"/>
-</signal>
 <signal name="SYS_VDD1_5V">
 <contactref element="U3" pad="24"/>
+<contactref element="U2" pad="1"/>
+<contactref element="U1" pad="1"/>
+<contactref element="U3" pad="49"/>
+<wire x1="107.002" y1="40.868" x2="95.758" y2="74.93" width="0" layer="19" extent="1-1"/>
+<wire x1="119.702" y1="18.008" x2="107.002" y2="40.868" width="0" layer="19" extent="1-1"/>
+<wire x1="35.052" y1="74.93" x2="95.758" y2="74.93" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

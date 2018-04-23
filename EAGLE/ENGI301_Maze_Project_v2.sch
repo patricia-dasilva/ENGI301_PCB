@@ -3,7 +3,7 @@
 <eagle version="9.0.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -1830,6 +1830,9 @@ Sizes: 0402, 0603 &amp; 0805</description>
 <text x="7.62" y="175.26" size="5.08" layer="95">Power 
 Button</text>
 <text x="114.3" y="190.5" size="5.08" layer="95">Buzzer</text>
+<text x="314.96" y="162.56" size="1.778" layer="91">Only two LED arrays are connected to 
+board directly; 
+Other two are daisy-chained</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>

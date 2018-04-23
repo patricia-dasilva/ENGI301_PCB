@@ -922,15 +922,11 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <signal name="SYS_VDD1_3P3V">
 <contactref element="C2" pad="1"/>
 <contactref element="C3" pad="1"/>
-<contactref element="U3" pad="24"/>
-<contactref element="U3" pad="49"/>
 <contactref element="R6" pad="1"/>
 <contactref element="R7" pad="1"/>
 <contactref element="R8" pad="1"/>
 <contactref element="R9" pad="1"/>
 <contactref element="R10" pad="1"/>
-<contactref element="U1" pad="1"/>
-<contactref element="U2" pad="1"/>
 <contactref element="U3" pad="14"/>
 <contactref element="R11" pad="2"/>
 <contactref element="R12" pad="2"/>
@@ -945,19 +941,22 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <vertex x="145.161" y="-0.381"/>
 <vertex x="145.161" y="76.581"/>
 </polygon>
-<wire x1="70.412" y1="13.438" x2="71.8439" y2="15.748" width="0" layer="19" extent="1-1"/>
-<wire x1="69.112" y1="12.938" x2="70.412" y2="13.438" width="0" layer="19" extent="1-1"/>
-<wire x1="70.012" y1="10.438" x2="69.112" y2="12.938" width="0" layer="19" extent="1-1"/>
-<wire x1="72.112" y1="10.938" x2="70.012" y2="10.438" width="0" layer="19" extent="1-1"/>
+<contactref element="U3" pad="49"/>
+<wire x1="107.002" y1="40.868" x2="119.702" y2="40.868" width="0" layer="19" extent="1-1"/>
+<wire x1="107.002" y1="18.008" x2="107.002" y2="40.868" width="0" layer="19" extent="1-1"/>
+<wire x1="75.438" y1="11.3792" x2="107.002" y2="18.008" width="0" layer="19" extent="1-1"/>
+<wire x1="72.112" y1="10.938" x2="75.438" y2="11.3792" width="0" layer="19" extent="1-1"/>
+<wire x1="70.012" y1="10.438" x2="72.112" y2="10.938" width="0" layer="19" extent="1-1"/>
+<wire x1="69.112" y1="12.938" x2="70.012" y2="10.438" width="0" layer="19" extent="1-1"/>
+<wire x1="70.412" y1="13.438" x2="69.112" y2="12.938" width="0" layer="19" extent="1-1"/>
+<wire x1="71.8439" y1="15.748" x2="70.412" y2="13.438" width="0" layer="19" extent="1-1"/>
 <wire x1="68.0339" y1="15.748" x2="69.112" y2="12.938" width="0" layer="19" extent="1-1"/>
 <wire x1="66.04" y1="12.4968" x2="69.112" y2="12.938" width="0" layer="19" extent="1-1"/>
-<wire x1="75.438" y1="11.3792" x2="72.112" y2="10.938" width="0" layer="19" extent="1-1"/>
 <wire x1="46.4439" y1="30.48" x2="68.0339" y2="15.748" width="0" layer="19" extent="1-1"/>
 <wire x1="24.0919" y1="30.226" x2="46.4439" y2="30.48" width="0" layer="19" extent="1-1"/>
 <wire x1="19.0119" y1="30.48" x2="24.0919" y2="30.226" width="0" layer="19" extent="1-1"/>
 <wire x1="22.0599" y1="11.176" x2="24.0919" y2="30.226" width="0" layer="19" extent="1-1"/>
 <wire x1="16.4719" y1="50.038" x2="19.0119" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="35.052" y1="74.93" x2="16.4719" y2="50.038" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="C1" pad="1"/>
@@ -1096,6 +1095,15 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <contactref element="R3" pad="1"/>
 <contactref element="U3" pad="29"/>
 <wire x1="127.2159" y1="2.54" x2="127.322" y2="15.468" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$14">
+<contactref element="U1" pad="1"/>
+</signal>
+<signal name="N$15">
+<contactref element="U2" pad="1"/>
+</signal>
+<signal name="SYS_VDD1_5V">
+<contactref element="U3" pad="24"/>
 </signal>
 </signals>
 </board>

@@ -22,7 +22,7 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -903,33 +903,39 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <contactref element="U4" pad="PIN18"/>
 <contactref element="U4" pad="PIN20"/>
 <contactref element="U4" pad="PIN9"/>
-<wire x1="45.212" y1="74.93" x2="47.752" y2="74.93" width="0" layer="19" extent="1-1"/>
-<wire x1="91.34" y1="61.936" x2="45.212" y2="74.93" width="0" layer="19" extent="1-1"/>
-<wire x1="55.678" y1="59.182" x2="78.84" y2="61.936" width="0" layer="19" extent="1-1"/>
-<wire x1="108.458" y1="74.93" x2="55.678" y2="59.182" width="0" layer="19" extent="1-1"/>
 <wire x1="105.918" y1="74.93" x2="108.458" y2="74.93" width="0" layer="19" extent="1-1"/>
-<wire x1="51.408" y1="25.186" x2="55.678" y2="59.182" width="0" layer="19" extent="1-1"/>
+<wire x1="91.34" y1="61.936" x2="105.918" y2="74.93" width="0" layer="19" extent="1-1"/>
+<wire x1="55.678" y1="59.182" x2="78.84" y2="61.936" width="0" layer="19" extent="1-1"/>
+<wire x1="47.752" y1="74.93" x2="55.678" y2="59.182" width="0" layer="19" extent="1-1"/>
+<wire x1="45.212" y1="74.93" x2="47.752" y2="74.93" width="0" layer="19" extent="1-1"/>
+<wire x1="109.542" y1="40.868" x2="91.34" y2="61.936" width="0" layer="19" extent="1-1"/>
+<wire x1="117.162" y1="40.868" x2="109.542" y2="40.868" width="0" layer="19" extent="1-1"/>
+<wire x1="117.162" y1="18.008" x2="117.162" y2="40.868" width="0" layer="19" extent="1-1"/>
+<wire x1="109.542" y1="18.008" x2="117.162" y2="18.008" width="0" layer="19" extent="1-1"/>
+<wire x1="109.542" y1="15.468" x2="109.542" y2="18.008" width="0" layer="19" extent="1-1"/>
+<wire x1="138.71" y1="9.398" x2="117.162" y2="18.008" width="0" layer="19" extent="1-1"/>
+<wire x1="138.71" y1="6.35" x2="138.71" y2="9.398" width="0" layer="19" extent="1-1"/>
+<wire x1="138.71" y1="2.54" x2="138.71" y2="6.35" width="0" layer="19" extent="1-1"/>
+<wire x1="75.438" y1="12.4968" x2="109.542" y2="15.468" width="0" layer="19" extent="1-1"/>
+<wire x1="72.112" y1="12.938" x2="75.438" y2="12.4968" width="0" layer="19" extent="1-1"/>
+<wire x1="71.212" y1="13.438" x2="72.112" y2="12.938" width="0" layer="19" extent="1-1"/>
+<wire x1="70.412" y1="10.438" x2="72.112" y2="12.938" width="0" layer="19" extent="1-1"/>
+<wire x1="71.9328" y1="8.128" x2="70.412" y2="10.438" width="0" layer="19" extent="1-1"/>
+<wire x1="66.04" y1="11.3792" x2="70.412" y2="10.438" width="0" layer="19" extent="1-1"/>
+<wire x1="63.908" y1="25.186" x2="71.212" y2="13.438" width="0" layer="19" extent="1-1"/>
+<wire x1="51.408" y1="25.186" x2="63.908" y2="25.186" width="0" layer="19" extent="1-1"/>
 <wire x1="40.54" y1="25.186" x2="51.408" y2="25.186" width="0" layer="19" extent="1-1"/>
-<wire x1="63.908" y1="25.186" x2="51.408" y2="25.186" width="0" layer="19" extent="1-1"/>
 <wire x1="28.04" y1="25.186" x2="40.54" y2="25.186" width="0" layer="19" extent="1-1"/>
 <wire x1="16.156" y1="25.186" x2="28.04" y2="25.186" width="0" layer="19" extent="1-1"/>
 <wire x1="3.656" y1="25.186" x2="16.156" y2="25.186" width="0" layer="19" extent="1-1"/>
 <wire x1="40.54" y1="6.136" x2="40.54" y2="25.186" width="0" layer="19" extent="1-1"/>
 <wire x1="28.04" y1="6.136" x2="40.54" y2="6.136" width="0" layer="19" extent="1-1"/>
-<wire x1="75.438" y1="12.4968" x2="40.54" y2="6.136" width="0" layer="19" extent="1-1"/>
-<wire x1="66.04" y1="11.3792" x2="75.438" y2="12.4968" width="0" layer="19" extent="1-1"/>
-<wire x1="71.9328" y1="8.128" x2="66.04" y2="11.3792" width="0" layer="19" extent="1-1"/>
-<wire x1="138.71" y1="9.398" x2="71.9328" y2="8.128" width="0" layer="19" extent="1-1"/>
-<wire x1="138.71" y1="6.35" x2="138.71" y2="9.398" width="0" layer="19" extent="1-1"/>
-<wire x1="138.71" y1="2.54" x2="138.71" y2="6.35" width="0" layer="19" extent="1-1"/>
-<wire x1="109.542" y1="15.468" x2="138.71" y2="2.54" width="0" layer="19" extent="1-1"/>
-<wire x1="109.542" y1="18.008" x2="109.542" y2="15.468" width="0" layer="19" extent="1-1"/>
-<wire x1="117.162" y1="18.008" x2="109.542" y2="18.008" width="0" layer="19" extent="1-1"/>
-<wire x1="117.162" y1="40.868" x2="117.162" y2="18.008" width="0" layer="19" extent="1-1"/>
-<wire x1="109.542" y1="40.868" x2="117.162" y2="40.868" width="0" layer="19" extent="1-1"/>
-<wire x1="71.212" y1="13.438" x2="3.656" y2="25.186" width="0" layer="19" extent="1-1"/>
-<wire x1="72.112" y1="12.938" x2="71.212" y2="13.438" width="0" layer="19" extent="1-1"/>
-<wire x1="70.412" y1="10.438" x2="72.112" y2="12.938" width="0" layer="19" extent="1-1"/>
+<polygon width="0.1016" layer="15">
+<vertex x="-0.762" y="76.962"/>
+<vertex x="-0.762" y="-0.762"/>
+<vertex x="145.542" y="-0.762"/>
+<vertex x="145.542" y="76.962"/>
+</polygon>
 </signal>
 <signal name="SYS_VDD1_3P3V">
 <contactref element="C2" pad="1"/>
@@ -951,29 +957,30 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <contactref element="U4" pad="PIN22"/>
 <contactref element="U4" pad="PIN1"/>
 <contactref element="U4" pad="PIN8"/>
-<wire x1="107.002" y1="40.868" x2="35.052" y2="74.93" width="0" layer="19" extent="1-1"/>
-<wire x1="119.702" y1="40.868" x2="107.002" y2="40.868" width="0" layer="19" extent="1-1"/>
-<wire x1="119.702" y1="18.008" x2="119.702" y2="40.868" width="0" layer="19" extent="1-1"/>
-<wire x1="107.002" y1="18.008" x2="119.702" y2="18.008" width="0" layer="19" extent="1-1"/>
-<wire x1="66.04" y1="12.4968" x2="107.002" y2="18.008" width="0" layer="19" extent="1-1"/>
-<wire x1="75.438" y1="11.3792" x2="66.04" y2="12.4968" width="0" layer="19" extent="1-1"/>
-<wire x1="68.0339" y1="15.748" x2="75.438" y2="11.3792" width="0" layer="19" extent="1-1"/>
-<wire x1="71.8439" y1="15.748" x2="68.0339" y2="15.748" width="0" layer="19" extent="1-1"/>
-<wire x1="46.4439" y1="30.48" x2="71.8439" y2="15.748" width="0" layer="19" extent="1-1"/>
+<polygon width="0.1016" layer="2">
+<vertex x="-0.381" y="76.581"/>
+<vertex x="-0.381" y="-0.381"/>
+<vertex x="145.161" y="-0.381"/>
+<vertex x="145.161" y="76.581"/>
+</polygon>
+<wire x1="70.412" y1="13.438" x2="71.8439" y2="15.748" width="0" layer="19" extent="1-1"/>
+<wire x1="69.112" y1="12.938" x2="70.412" y2="13.438" width="0" layer="19" extent="1-1"/>
+<wire x1="70.012" y1="10.438" x2="69.112" y2="12.938" width="0" layer="19" extent="1-1"/>
+<wire x1="72.112" y1="10.938" x2="70.012" y2="10.438" width="0" layer="19" extent="1-1"/>
+<wire x1="68.0339" y1="15.748" x2="69.112" y2="12.938" width="0" layer="19" extent="1-1"/>
+<wire x1="66.04" y1="12.4968" x2="69.112" y2="12.938" width="0" layer="19" extent="1-1"/>
+<wire x1="75.438" y1="11.3792" x2="72.112" y2="10.938" width="0" layer="19" extent="1-1"/>
+<wire x1="46.4439" y1="30.48" x2="68.0339" y2="15.748" width="0" layer="19" extent="1-1"/>
 <wire x1="24.0919" y1="30.226" x2="46.4439" y2="30.48" width="0" layer="19" extent="1-1"/>
+<wire x1="19.0119" y1="30.48" x2="24.0919" y2="30.226" width="0" layer="19" extent="1-1"/>
 <wire x1="22.0599" y1="11.176" x2="24.0919" y2="30.226" width="0" layer="19" extent="1-1"/>
-<wire x1="16.4719" y1="50.038" x2="24.0919" y2="30.226" width="0" layer="19" extent="1-1"/>
-<wire x1="95.758" y1="74.93" x2="16.4719" y2="50.038" width="0" layer="19" extent="1-1"/>
-<wire x1="19.0119" y1="30.48" x2="22.0599" y2="11.176" width="0" layer="19" extent="1-1"/>
-<wire x1="72.112" y1="10.938" x2="19.0119" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="70.012" y1="10.438" x2="72.112" y2="10.938" width="0" layer="19" extent="1-1"/>
-<wire x1="69.112" y1="12.938" x2="70.012" y2="10.438" width="0" layer="19" extent="1-1"/>
-<wire x1="70.412" y1="13.438" x2="69.112" y2="12.938" width="0" layer="19" extent="1-1"/>
+<wire x1="16.4719" y1="50.038" x2="19.0119" y2="30.48" width="0" layer="19" extent="1-1"/>
+<wire x1="35.052" y1="74.93" x2="16.4719" y2="50.038" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="C1" pad="1"/>
 <contactref element="U4" pad="PIN10"/>
-<wire x1="70.812" y1="10.438" x2="70.8152" y2="8.128" width="0" layer="19" extent="1-1"/>
+<wire x1="70.8152" y1="8.128" x2="70.812" y2="10.438" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
 <contactref element="R1" pad="2"/>
@@ -988,7 +995,7 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <signal name="N$11">
 <contactref element="R3" pad="2"/>
 <contactref element="U$10" pad="A"/>
-<wire x1="135.61" y1="2.54" x2="128.8161" y2="2.54" width="0" layer="19" extent="1-1"/>
+<wire x1="128.8161" y1="2.54" x2="135.61" y2="2.54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="I2C_SCL">
 <contactref element="U3" pad="45"/>
@@ -1013,13 +1020,13 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <contactref element="PWR" pad="P$3"/>
 <contactref element="PWR" pad="P$4"/>
 <contactref element="U3" pad="48"/>
-<wire x1="91.34" y1="56.936" x2="78.84" y2="56.936" width="0" layer="19" extent="1-1"/>
-<wire x1="104.462" y1="43.408" x2="78.84" y2="56.936" width="0" layer="19" extent="1-1"/>
+<wire x1="91.34" y1="56.936" x2="104.462" y2="43.408" width="0" layer="19" extent="1-1"/>
+<wire x1="78.84" y1="56.936" x2="91.34" y2="56.936" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BUZZER">
 <contactref element="U3" pad="37"/>
 <contactref element="U$6" pad="POS"/>
-<wire x1="91.762" y1="40.868" x2="62.178" y2="59.182" width="0" layer="19" extent="1-1"/>
+<wire x1="62.178" y1="59.182" x2="91.762" y2="40.868" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BTN0">
 <contactref element="U3" pad="20"/>
@@ -1037,19 +1044,19 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <contactref element="R6" pad="2"/>
 <contactref element="U$2" pad="P$1" route="any" routetag="G$1.P$1"/>
 <contactref element="U$2" pad="P$2" route="any" routetag="G$1.P$1"/>
-<wire x1="28.04" y1="49.236" x2="18.0721" y2="50.038" width="0" layer="19" extent="1-1"/>
+<wire x1="18.0721" y1="50.038" x2="28.04" y2="49.236" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$8">
 <contactref element="R7" pad="2"/>
 <contactref element="U$7" pad="P$1" route="any" routetag="G$1.P$1"/>
 <contactref element="U$7" pad="P$2" route="any" routetag="G$1.P$1"/>
-<wire x1="28.04" y1="11.136" x2="23.6601" y2="11.176" width="0" layer="19" extent="1-1"/>
+<wire x1="23.6601" y1="11.176" x2="28.04" y2="11.136" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$10">
 <contactref element="R8" pad="2"/>
 <contactref element="U$3" pad="P$1" route="any" routetag="G$1.P$1"/>
 <contactref element="U$3" pad="P$2" route="any" routetag="G$1.P$1"/>
-<wire x1="28.04" y1="30.186" x2="25.6921" y2="30.226" width="0" layer="19" extent="1-1"/>
+<wire x1="25.6921" y1="30.226" x2="28.04" y2="30.186" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$12">
 <contactref element="R9" pad="2"/>
@@ -1061,22 +1068,22 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <contactref element="R10" pad="2"/>
 <contactref element="U$1" pad="P$1" route="any" routetag="G$1.P$1"/>
 <contactref element="U$1" pad="P$2" route="any" routetag="G$1.P$1"/>
-<wire x1="51.408" y1="30.186" x2="48.0441" y2="30.48" width="0" layer="19" extent="1-1"/>
+<wire x1="48.0441" y1="30.48" x2="51.408" y2="30.186" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LEDARR_CLK">
 <contactref element="U3" pad="8"/>
 <contactref element="U1" pad="2"/>
-<wire x1="99.382" y1="18.008" x2="37.592" y2="74.93" width="0" layer="19" extent="1-1"/>
+<wire x1="37.592" y1="74.93" x2="99.382" y2="18.008" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LEDARR_MOSI">
 <contactref element="U3" pad="12"/>
 <contactref element="U1" pad="4"/>
-<wire x1="104.462" y1="18.008" x2="42.672" y2="74.93" width="0" layer="19" extent="1-1"/>
+<wire x1="42.672" y1="74.93" x2="104.462" y2="18.008" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LEDARR_CS">
 <contactref element="U3" pad="6"/>
 <contactref element="U1" pad="3"/>
-<wire x1="96.842" y1="18.008" x2="40.132" y2="74.93" width="0" layer="19" extent="1-1"/>
+<wire x1="40.132" y1="74.93" x2="96.842" y2="18.008" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LEDARR2_CLK">
 <contactref element="U3" pad="65"/>
@@ -1107,14 +1114,6 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <contactref element="R3" pad="1"/>
 <contactref element="U3" pad="29"/>
 <wire x1="127.2159" y1="2.54" x2="127.322" y2="15.468" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$14">
-<polygon width="0.1016" layer="2">
-<vertex x="-0.381" y="76.581"/>
-<vertex x="-0.381" y="-0.381"/>
-<vertex x="145.161" y="-0.381"/>
-<vertex x="145.161" y="76.581"/>
-</polygon>
 </signal>
 </signals>
 </board>

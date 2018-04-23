@@ -1051,6 +1051,7 @@ This DRC check is for 4-Layer Standard Capability boards. Use Layer 2 and 15 for
 <wire x1="70.012" y1="13.438" x2="70.012" y2="15.2939" width="0.1524" layer="1"/>
 <wire x1="70.012" y1="15.2939" x2="69.85" y2="15.4559" width="0.1524" layer="1"/>
 <wire x1="70.012" y1="15.2939" x2="101.922" y2="40.868" width="0" layer="19" extent="1-1"/>
+<wire x1="70.012" y1="15.2939" x2="70.012" y2="15.2939" width="0.1524" layer="1"/>
 </signal>
 <signal name="I2C_SDA">
 <contactref element="U3" pad="47"/>
